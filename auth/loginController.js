@@ -77,16 +77,3 @@ myApp.controller('FbAuth', ['$rootScope', '$scope', '$http', '$location', functi
 	}
 
 }]);
-
-
-myApp.controller('profile', ['$rootScope', '$scope', '$http', function($rootScope, $scope, $http) {
-	console.log('profile controller');
-
-}]);
-
-
-
-
-
-
-
