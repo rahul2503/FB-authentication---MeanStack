@@ -1,0 +1,33 @@
+
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<title>Login Module</title>
+	</head>
+
+	<body ng-app='myApp'>
+		<div ng-controller="FbAuth">
+			<div ng-hide="hideLoginButton">
+				<fb:login-button scope="public_profile,email" ng-click="checkLoginState();" >
+				</fb:login-button>
+			</div>
+
+			<div ng-show="showProfileButton" id="status1">
+				Name: {{username}}<br>
+				<img src="{{dp_url}}"/>
+				<br>
+				<br>
+				<button ng-click="logout();">Logout</button>
+			</div>
+
+<!-- 		<div ng-show="showProfileButton">
+			<button ng-click="showProfile()">Show Profile</button>
+		</div> -->
+
+		</div>
+
+		<!-- <div ng-view></div> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+		<script src="loginController.js"></script>
+	</body>
+</html>

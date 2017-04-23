@@ -1,0 +1,10 @@
+<div ng-controller="FbAuth">
+			<!-- <img src="http://www.puneinside.com/images/fb%20login.png" ng-click="loginWithFB()" /> -->
+
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+			<div id="status1"></div>
+				<div>
+					<img src="{{dp_url}}">
+				</div>
+		</div>
