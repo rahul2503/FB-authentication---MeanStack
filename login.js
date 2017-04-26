@@ -24,7 +24,7 @@ module.exports.loginWithFB = function(req, res) {
 				'session_id': resp._id
 			}
 
-			reJSON.parse(response)sd(resp);
+			res.send(resp);
 		} else {
 			console.log("Error creating session");
 			throw new Error('Error creating session');
